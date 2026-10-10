@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Nova Marketing · Sobre nosotros</title>
+  <meta name="description" content="Conoce al equipo detrás de Nova: 10 años creando estrategias de marketing digital que conectan marcas con personas." />
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#ec4899",
+            "primary-light": "#f472b6",
+            "background-light": "#f7f6f8",
+            "background-dark": "#0f0a14",
+          },
+          fontFamily: { display: ["Inter"] },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+
+      <!-- NAVBAR -->
+      <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-gray-200/50 dark:border-gray-700/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-6 md:px-10 py-4">
+        <a class="flex items-center gap-3" href="index.html">
+          <svg class="h-7 w-7 text-primary" fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 6L4 16v18l20 10 20-10V16L24 6zm0 6l14 7v14L24 40 10 33V19l14-7z"/>
+            <circle cx="24" cy="26" r="5" fill="currentColor"/>
+          </svg>
+          <h2 class="text-lg font-bold text-gray-900 dark:text-white">Nova Marketing</h2>
+        </a>
+        <nav class="hidden md:flex items-center gap-7" id="navMenu">
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="nosotros.html">Nosotros</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="servicios.html">Servicios</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="horarios.html">Horarios</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="precios.html">Precios</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="galeria.html">Galería</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="contacto.html">Contacto</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <button id="btnDarkMode" class="hidden md:flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-primary hover:text-white transition-colors" aria-label="Cambiar modo">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 256 256"><path d="M120,40V16a8,8,0,0,1,16,0V40a8,8,0,0,1-16,0Zm72,88a64,64,0,1,1-64-64,64.07,64.07,0,0,1,64,64Zm-16,0a48,48,0,1,0-48,48,48.05,48.05,0,0,0,48-48ZM58.34,69.66a8,8,0,0,0,11.32-11.32l-16-16a8,8,0,0,0-11.32,11.32Zm0,116.68-16,16a8,8,0,0,0,11.32,11.32l16-16a8,8,0,0,0-11.32-11.32ZM192,72a8,8,0,0,0,5.66-2.34l16-16a8,8,0,0,0-11.32-11.32l-16,16A8,8,0,0,0,192,72Zm5.66,114.34-16-16a8,8,0,0,0-11.32,11.32l16,16a8,8,0,0,0,11.32-11.32ZM40,120H16a8,8,0,0,0,0,16H40a8,8,0,0,0,0-16Zm88,96a8,8,0,0,0-8,8v24a8,8,0,0,0,16,0V224A8,8,0,0,0,128,216Zm96-96H200a8,8,0,0,0,0,16h24a8,8,0,0,0,0-16Z"/></svg>
+          </button>
+          <button class="md:hidden text-gray-900 dark:text-white" id="btnMenu" aria-label="Abrir menú">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="flex-1">
+        <!-- HERO -->
+        <section class="relative overflow-hidden bg-gradient-to-br from-primary via-primary to-primary-light py-20 sm:py-24">
+          <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 70% 70%, white, transparent 50%);"></div>
+          <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-xs font-bold uppercase tracking-widest text-white/80">Sobre nosotros</p>
+            <h1 class="mt-4 text-4xl font-black text-white sm:text-5xl md:text-6xl tracking-tight">Un equipo obsesionado con tu crecimiento</h1>
+            <p class="mt-6 max-w-3xl mx-auto text-lg text-white/90">En Nova Marketing combinamos creatividad, estrategia y datos para llevar a tu marca al siguiente nivel.</p>
+          </div>
+        </section>
+
+        <!-- HISTORIA / TIMELINE -->
+        <section class="py-16 sm:py-24">
+          <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <p class="text-xs font-bold uppercase tracking-widest text-primary">Nuestra historia</p>
+              <h2 class="mt-2 text-3xl font-black tracking-tight text-gray-900 dark:text-white sm:text-4xl">10 años construyendo marcas</h2>
+              <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">De un pequeño estudio a una agencia 360° líder en LATAM. Conocé los hitos que nos trajeron hasta acá.</p>
+            </div>
+            <div class="mt-16 space-y-8 md:space-y-12">
+              <!-- Línea vertical (solo desktop) -->
+              <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/20"></div>
+              <div id="historiaTimeline"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EQUIPO -->
+        <section class="py-16 sm:py-24 bg-primary/5 dark:bg-gray-800/20">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <p class="text-xs font-bold uppercase tracking-widest text-primary">El equipo</p>
+              <h2 class="mt-2 text-3xl font-black tracking-tight text-gray-900 dark:text-white sm:text-4xl">Las mentes detrás de Nova</h2>
+              <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">Profesionales apasionados por el marketing, la creatividad y los resultados.</p>
+            </div>
+            <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4" id="equipoGrid"></div>
+          </div>
+        </section>
+
+        <!-- VALORES -->
+        <section class="py-16 sm:py-24">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+              <p class="text-xs font-bold uppercase tracking-widest text-primary">Nuestros valores</p>
+              <h2 class="mt-2 text-3xl font-black tracking-tight text-gray-900 dark:text-white sm:text-4xl">Lo que nos mueve</h2>
+              <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">Cuatro principios que guían cada campaña, cada estrategia y cada relación con nuestros clientes.</p>
+            </div>
+            <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4" id="valoresGrid"></div>
+          </div>
+        </section>
+
+        <!-- RAZONES -->
+        <section class="py-16 sm:py-24 bg-primary/5 dark:bg-gray-800/20">
+          <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+              <div>
+                <p class="text-xs font-bold uppercase tracking-widest text-primary">Por qué elegirnos</p>
+                <h2 class="mt-2 text-3xl font-black tracking-tight text-gray-900 dark:text-white sm:text-4xl">Lo que nos diferencia</h2>
+                <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Más que una agencia, somos tu partner de marketing. Te acompañamos en cada paso, desde la estrategia hasta la ejecución y medición.</p>
+                <a href="servicios.html" class="mt-6 inline-flex items-center gap-2 font-bold text-primary hover:text-primary-light">
+                  Ver nuestros servicios
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+                </a>
+              </div>
+              <div class="grid gap-5 sm:grid-cols-2" id="razonesGrid"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="relative overflow-hidden py-20">
+          <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-primary"></div>
+          <div class="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-black tracking-tight text-white sm:text-4xl">¿Listo para crear algo increíble con nosotros?</h2>
+            <a href="contacto.html" class="mt-8 inline-flex items-center justify-center gap-2 rounded-lg bg-white px-8 py-4 text-base font-black text-primary shadow-2xl transition-all hover:scale-105">
+                Empezar un proyecto
+                <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14m-7-7l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="bg-background-light dark:bg-background-dark border-t border-gray-200/50 dark:border-gray-700/50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-10 py-14">
+          <div class="grid gap-10 md:grid-cols-4">
+            <div class="md:col-span-2">
+              <div class="flex items-center gap-3">
+                <svg class="h-7 w-7 text-primary" fill="currentColor" viewBox="0 0 48 48"><path d="M24 6L4 16v18l20 10 20-10V16L24 6zm0 6l14 7v14L24 40 10 33V19l14-7z"/><circle cx="24" cy="26" r="5"/></svg>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">Nova Marketing</h3>
+              </div>
+              <p class="mt-4 max-w-md text-gray-600 dark:text-gray-400">Estrategias que conectan, resultados que escalan. Agencia 360° con 10+ años creando marcas líderes en LATAM.</p>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-gray-900 dark:text-white">Navegación</h4>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="index.html">Inicio</a></li>
+                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="nosotros.html">Nosotros</a></li>
+                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="servicios.html">Servicios</a></li>
+                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="precios.html">Precios</a></li>
+                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold uppercase tracking-wider text-gray-900 dark:text-white">Legal</h4>
+              <ul class="mt-4 space-y-2 text-sm">
+                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="privacidad.html">Política de privacidad</a></li>
+                <li><a class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors" href="terminos.html">Términos y condiciones</a></li>
+              </ul>
+              <div class="mt-6 flex gap-3">
+                <a class="text-gray-400 hover:text-primary transition-colors" href="#" aria-label="Instagram"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.81.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.81-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.81-.25-2.23-.41a3.72 3.72 0 01-1.38-.9 3.72 3.72 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.81.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.55a5.88 5.88 0 00-2.13 1.39A5.88 5.88 0 00.62 4.14C.33 4.9.13 5.77.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.55 2.91.3.79.7 1.46 1.39 2.13a5.88 5.88 0 002.13 1.39c.76.29 1.63.49 2.91.55C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.55a5.88 5.88 0 002.13-1.39 5.88 5.88 0 001.39-2.13c.29-.76.49-1.63.55-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.55-2.91a5.88 5.88 0 00-1.39-2.13A5.88 5.88 0 0019.86.62C19.1.33 18.23.13 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zM12 16a4 4 0 110-8 4 4 0 010 8zm6.41-11.85a1.44 1.44 0 110 2.88 1.44 1.44 0 010-2.88z"/></svg></a>
+                <a class="text-gray-400 hover:text-primary transition-colors" href="#" aria-label="LinkedIn"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a class="text-gray-400 hover:text-primary transition-colors" href="#" aria-label="TikTok"><svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005.8 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.84-.1z"/></svg></a>
+              </div>
+            </div>
+          </div>
+          <p class="mt-10 border-t border-gray-200/50 dark:border-gray-700/50 pt-6 text-center text-sm text-gray-600 dark:text-gray-400">© <span data-anio>2025</span> Nova Marketing · Av. Providencia 1234, Santiago · +56 9 8765 4321</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>
